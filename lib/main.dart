@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Padding(
       padding: EdgeInsets.all(8.0),
       child: ExpansionTile(
+        key: Key(article.text),
         title: Text(article.text),
         children: <Widget>[
           Row(
